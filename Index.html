@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Undangan Pernikahan | Ahmad & Aisyah</title>
+  <!-- Google Fonts: Elegant Serif, Script, Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- COVER SCREEN (OPENING) -->
+  <div id="cover" class="cover">
+    <div class="cover-overlay"></div>
+    <div class="cover-content">
+      <div class="cover-badge">The Wedding of</div>
+      <h1 class="couple-name-cover">Ahmad & Aisyah</h1>
+      <div class="cover-date">Sabtu, 25 Desember 2025</div>
+      <button id="openInvitationBtn" class="btn-open">Buka Undangan</button>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT (setelah cover dibuka) -->
+  <main id="mainContent" class="main-content hidden">
+    <!-- Floating Music Control -->
+    <div class="music-control" id="musicToggle">
+      <span class="music-icon">🎵</span>
+      <span class="music-text">Play</span>
+    </div>
+
+    <!-- Floating Buttons: WhatsApp & Scroll Top -->
+    <div class="floating-buttons">
+      <a href="https://wa.me/6281234567890?text=Assalamualaikum%2C%20saya%20menerima%20undangan%20pernikahan%20Ahmad%20%26%20Aisyah" target="_blank" class="float-btn whatsapp" id="whatsappBtn">
+        💬
+      </a>
+      <button class="float-btn scroll-top" id="scrollTopBtn">
+        ↑
+      </button>
+    </div>
+
+    <!-- Personalisasi Nama Tamu -->
+    <div class="personal-greeting" id="personalGreeting"></div>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=800&auto=format" alt="Ahmad & Aisyah" loading="lazy">
+      </div>
+      <div class="hero-text">
+        <h2 class="hero-subtitle">Save The Date</h2>
+        <h1 class="hero-couple">Ahmad <span>&</span> Aisyah</h1>
+        <p class="hero-date">25 Desember 2025</p>
+        <div class="hero-divider"></div>
+      </div>
+    </section>
+
+    <!-- QUOTE / AYAT -->
+    <section class="quote-section">
+      <div class="container">
+        <div class="quote-card">
+          <p class="quote-text">"Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya di antaramu rasa kasih dan sayang."</p>
+          <p class="quote-source">— QS. Ar-Rum: 21</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFIL MEMPELAI -->
+    <section class="couple-profiles">
+      <div class="container">
+        <h2 class="section-title">Pasangan Pengantin</h2>
+        <div class="profiles-wrapper">
+          <div class="profile-card">
+            <div class="profile-img">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Ahmad">
+            </div>
+            <h3>Ahmad Fauzan</h3>
+            <p>Putra dari Bapak H. Ramli & Ibu Hj. Siti Aminah</p>
+          </div>
+          <div class="profile-card">
+            <div class="profile-img">
+              <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Aisyah">
+            </div>
+            <h3>Aisyah Putri</h3>
+            <p>Putri dari Bapak H. Zainal & Ibu Hj. Fatimah</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOVE STORY TIMELINE -->
+    <section class="love-story">
+      <div class="container">
+        <h2 class="section-title">Perjalanan Cinta</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Pertemuan Pertama</h3>
+              <span class="timeline-date">Februari 2023</span>
+              <p>Bertemu di acara seminar kampus, diskusi tanpa sengaja membawa benih kasih yang tumbuh perlahan.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Lamaran</h3>
+              <span class="timeline-date">Juni 2024</span>
+              <p>Momen penuh haru saat keluarga besar bersatu, melamar dengan penuh kesederhanaan dan kebahagiaan.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Pernikahan</h3>
+              <span class="timeline-date">25 Desember 2025</span>
+              <p>Mengikat janji suci di hadapan Allah dan keluarga, memulai babak baru penuh berkah.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DETAIL ACARA + COUNTDOWN -->
+    <section class="event-details">
+      <div class="container">
+        <h2 class="section-title">Detail Acara</h2>
+        <div class="event-cards">
+          <div class="event-card">
+            <div class="event-icon">📜</div>
+            <h3>Akad Nikah</h3>
+            <p class="event-date">Sabtu, 25 Desember 2025</p>
+            <p class="event-time">Pukul 09:00 - 10:30 WIB</p>
+            <p class="event-place">Masjid Agung Al-Ikhlas, Jl. Merdeka No.12, Jakarta</p>
+          </div>
+          <div class="event-card">
+            <div class="event-icon">🍽️</div>
+            <h3>Resepsi</h3>
+            <p class="event-date">Sabtu, 25 Desember 2025</p>
+            <p class="event-time">Pukul 12:00 - 15:00 WIB</p>
+            <p class="event-place">Gedung Puri Mandiri Ballroom, Jl. Sudirman Kav 22, Jakarta</p>
+          </div>
+        </div>
+
+        <!-- COUNTDOWN TIMER -->
+        <div class="countdown-wrapper">
+          <h3>Menuju Hari Bahagia</h3>
+          <div class="countdown-timer" id="countdownTimer">
+            <div class="countdown-block"><span id="days">00</span><span>Hari</span></div>
+            <div class="countdown-block"><span id="hours">00</span><span>Jam</span></div>
+            <div class="countdown-block"><span id="minutes">00</span><span>Menit</span></div>
+            <div class="countdown-block"><span id="seconds">00</span><span>Detik</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOKASI + MAPS -->
+    <section class="location">
+      <div class="container">
+        <h2 class="section-title">Lokasi Acara</h2>
+        <div class="map-card">
+          <div class="map-container">
+            <iframe src="https://maps.google.com/maps?q=Gedung%20Puri%20Mandiri%20Jakarta&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <a href="https://maps.google.com/?q=Gedung+Puri+Mandiri+Jakarta" target="_blank" class="btn-map">Buka di Google Maps</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- RSVP FORM -->
+    <section class="rsvp">
+      <div class="container">
+        <h2 class="section-title">Konfirmasi Kehadiran</h2>
+        <form id="rsvpForm" class="rsvp-form">
+          <input type="text" id="rsvpName" placeholder="Nama Lengkap" required>
+          <select id="rsvpAttendance" required>
+            <option value="">Pilih Kehadiran</option>
+            <option value="Hadir">Hadir</option>
+            <option value="Tidak Hadir">Tidak Hadir</option>
+          </select>
+          <input type="number" id="rsvpGuests" placeholder="Jumlah Tamu (Jika Hadir)" min="1" max="10">
+          <button type="submit" class="btn-submit">Kirim Konfirmasi</button>
+        </form>
+        <div id="rsvpMessage" class="form-message"></div>
+      </div>
+    </section>
+
+    <!-- UCAPAN & DOA -->
+    <section class="wishes">
+      <div class="container">
+        <h2 class="section-title">Ucapan & Doa</h2>
+        <form id="wishForm" class="wish-form">
+          <input type="text" id="wishName" placeholder="Nama Anda" required>
+          <textarea id="wishMessage" rows="3" placeholder="Tulis ucapan dan doa untuk pasangan..." required></textarea>
+          <button type="submit" class="btn-submit">Kirim Ucapan</button>
+        </form>
+        <div id="wishesList" class="wishes-list">
+          <!-- List ucapan akan diisi JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <p>Merupakan suatu kehormatan bagi kami atas kehadiran dan doa yang Bapak/Ibu/Saudara/i berikan.</p>
+        <p class="footer-couple">Ahmad & Aisyah</p>
+        <p class="copyright">© 2025 - Undangan Pernikahan Digital | Terima Kasih</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Audio Background -->
+  <audio id="bgMusic" loop preload="auto">
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+          </html>
